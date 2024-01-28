@@ -1,0 +1,18 @@
+[project]
+name = "squid"
+version = "0.0.1"
+description = "SQueue Interactive Display"
+authors = [{name = "Finlay Clark"}]
+readme = "README.md"
+requires-python = ">=3.5"
+dependencies = ["py_cui"]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[build-system]
+requires = ["setuptools>=64.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project.scripts]
+squid = "squid.__main__:main"
